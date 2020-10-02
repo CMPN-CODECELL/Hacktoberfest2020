@@ -1,2 +1,5 @@
-# Hacktoberfest2020
-A guide to help you contribute to Hacktoberfest 2020 and to get you started towards Open Source Contribution
+# Data Structures
+
+In this folder, we'll be submitting the implementation of basic data structures in the above mentioned languages. 
+Try to include basic functions like Insertion, Deletion, Traversing, and other functions as you see fit.
+If you don't see the preferred language of your choice, feel free to make a new folder.
