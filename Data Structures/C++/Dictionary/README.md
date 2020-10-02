@@ -1,2 +1,2 @@
-# Hacktoberfest2020
-A guide to help you contribute to Hacktoberfest 2020 and to get you started towards Open Source Contribution
+# Dictionary
+Submit the basic implementation of a Dictionary with basic functionality like Adding keys, searching values from keys etc.
