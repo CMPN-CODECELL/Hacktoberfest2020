@@ -1,2 +1,2 @@
-# Hacktoberfest2020
-A guide to help you contribute to Hacktoberfest 2020 and to get you started towards Open Source Contribution
+#  Circular Queue
+Submit a basic implementation of circular queue in python  with basic operations like enqueue, deque etc.
