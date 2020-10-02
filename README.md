@@ -32,3 +32,5 @@ Make 4 valid Pull requests in the month of October to be elligible for a limited
 
 ## Hall of Fame code
 [![First](https://sourcerer.io/fame/CMPN-CODECELL/CMPN-CODECELL/Hacktoberfest2020/images/0)](https://sourcerer.io/fame/CMPN-CODECELL/CMPN-CODECELL/Hacktoberfest2020/links/0)
+
+### If this repository helped you in anyway, please leave a star :star: on our repository :blush:
