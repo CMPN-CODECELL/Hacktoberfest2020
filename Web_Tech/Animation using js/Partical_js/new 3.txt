@@ -1,2 +1,2 @@
 
-Create a particael using javascript
+Create a partical using javascript
