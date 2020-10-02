@@ -13,25 +13,30 @@
 # Hacktoberfest 2020
 ## :wave:
 A guide to help you contribute to Hacktoberfest 2020 and to get you started towards Open Source Contribution :wink: 
-
-## How to contribute
 You have to make 4 pull requests on any valid repositories. Once you make the pull request, there is a review period of a week.**PLEASE MAKE QUALITY PULL REQUESTS AND NOT SPAM** :rage:  If you make spam pull requests your pull request will be deemed invalid/spam and you will be unelligible to win swag :confused:
 
+## How to contribute
+
+Check out our Contributing documentation 
 
 ## Guidelines
-The first step is to register yourself on the Hacktober 
+
+The first step is to register yourself on the Hacktober using your Github account and sign up as a student.
 
 Find the open source repositories which interest and go try to pick up issues which you can solve. Once the issue is assigned to you, code away till you resolve the issue :nerd_face: . Once you are done with the coding create a pull request by following the proper **CONTRIBUTING.md** file given in the repository. If the repository doesn't have one, make a pull request following the accepted rules in the open source community :hugs:
 
+You have to make 4 pull requests on any valid repositories. Once you make the pull request, there is a review period of a week.**PLEASE MAKE QUALITY PULL REQUESTS AND NOT SPAM** :rage:  If you make spam pull requests your pull request will be deemed invalid/spam and you will be unelligible to win swag 
+
+
 ## Prizes
-Make 4 valid Pull requests in the month of October to be elligible for a limited edition T-shirt :innocent: or plant a tree :hugs:
+Make 4 valid Pull requests in the month of October to be elligible for a limited edition T-shirt or plant a tree :innocent:
 
 ## Hall of Fame code
 
 
 [![](https://sourcerer.io/fame/AjayKhalsa/CMPN-CODECELL/Hacktoberfest2020/images/0)](https://sourcerer.io/AjayKhalsa/CMPN-CODECELL/Hacktoberfest2020/links/0)
 
-[![First](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/images/0)](https://sourcerer.io/CMPN-CODECELL/thewires2/CMPN-CODECELL/Hacktoberfest2020/links/0)
+[![First](https://sourcerer.io/fame/CMPN-CODECELL/CMPN-CODECELL/Hacktoberfest2020/images/0)](https://sourcerer.io/CMPN-CODECELL/CMPN-CODECELL/Hacktoberfest2020/links/0)
 
 
 
