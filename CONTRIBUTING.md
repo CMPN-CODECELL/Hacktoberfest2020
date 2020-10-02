@@ -8,5 +8,5 @@
 #### 5. Make a Pull Request from your repository to have your changes added and merged into the master repo.
 #### 6. That's it! If the maintainers of the repo have any quesions or concerns, they will contact you, otherwise your changes will be merged into the repo!
 
-This guide to contributing is adapted from [Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md).
+#### This guide to contributing is adapted from [Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md).
 
