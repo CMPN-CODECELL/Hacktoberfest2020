@@ -31,7 +31,7 @@ Make 4 valid Pull requests in the month of October to be elligible for a limited
 
 [![](https://sourcerer.io/fame/AjayKhalsa/CMPN-CODECELL/Hacktoberfest2020/images/0)](https://sourcerer.io/AjayKhalsa/CMPN-CODECELL/Hacktoberfest2020/links/0)
 
-[![First](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/images/0)](https://sourcerer.io/CMPN-CODECELL/thewires2//CMPN-CODECELL/Hacktoberfest2020/links/0)
+[![First](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/images/0)](https://sourcerer.io/CMPN-CODECELL/thewires2/CMPN-CODECELL/Hacktoberfest2020/links/0)
 
 
 
