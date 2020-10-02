@@ -1,2 +1,2 @@
-# Hacktoberfest2020
-A guide to help you contribute to Hacktoberfest 2020 and to get you started towards Open Source Contribution
+# Queue
+Submit a basic implementation of queue in C using arrays with basic operations like enqueue, dequeue.
