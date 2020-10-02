@@ -1,2 +1,3 @@
-# Hacktoberfest2020
-A guide to help you contribute to Hacktoberfest 2020 and to get you started towards Open Source Contribution
+# Binary Search Tree
+In this folder, we'll be adding the implementation of Binary Search Tree, in C++.
+Try to include all the basic operations that you can implement.
