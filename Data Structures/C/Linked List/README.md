@@ -1,2 +1,2 @@
-# Hacktoberfest2020
-A guide to help you contribute to Hacktoberfest 2020 and to get you started towards Open Source Contribution
+# Linked List
+Submit a basic implementation of Linked List in C with functions like insertion, deletion etc.
