@@ -12,7 +12,7 @@
 
 # Hacktoberfest 2020
 ## :wave:
-A guide to help you contribute to Hacktoberfest 2020 and to get you started towards Open Source Contribution 😉 You have to make 4 pull requests on any valid repositories. Once you make the pull request, there is a review period of a week.PLEASE MAKE QUALITY PULL REQUESTS AND NOT SPAM 😡 If you make spam pull requests your pull request will be deemed invalid/spam and you will be unelligible to win swag 😕
+A guide to help you contribute to Hacktoberfest 2020 and to get you started towards Open Source Contribution 😉 
 ## How to contribute
 
 Check out our Contributing documentation 
