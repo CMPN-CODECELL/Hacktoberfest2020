@@ -1,4 +1,4 @@
-####C++
+#### C++
 
 Here you can add your code in the respective algorithm folder :grimacing:
 
