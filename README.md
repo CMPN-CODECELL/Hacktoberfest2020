@@ -31,4 +31,4 @@ You have to make 4 pull requests on any valid repositories. Once you make the pu
 Make 4 valid Pull requests in the month of October to be elligible for a limited edition T-shirt or plant a tree :innocent:
 
 ## Hall of Fame code
-[![First](https://sourcerer.io/fame/$USER/CMPN-CODECELL/Hacktoberfest2020/images/0)](https://sourcerer.io/fame/$USER/CMPN-CODECELL/Hacktoberfest2020/links/0)
+[![First](https://sourcerer.io/fame/CMPN-CODECELL/CMPN-CODECELL/Hacktoberfest2020/images/0)](https://sourcerer.io/fame/CMPN-CODECELL/CMPN-CODECELL/Hacktoberfest2020/links/0)
