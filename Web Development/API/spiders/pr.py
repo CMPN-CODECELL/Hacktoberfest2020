@@ -47,26 +47,23 @@ class PRSpider(scrapy.Spider):
             for url in urls:
                 yield scrapy.Request(url=url, callback=self.parse_many, headers=self.headers )
         else:
-            issues = response.xpath('//*[@id="js-repo-pjax-container"]/div[2]/div/div/div[4]/div[2]/div').extract()
-            for issue in issues:
-                html = issue
-                soup = bs4.BeautifulSoup(html, 'lxml')
-                date_time = datetime.strptime(re.sub("[a-zA-Z]"," ",soup.find('relative-time').get('datetime')).strip(" "),"%Y-%m-%d %H:%M:%S")
-                yield{
-                    "title": soup.find('a',{"class":"link-gray-dark","data-hovercard-type":"pull_request"}).text,
-                    "date" : date_time.date().strftime('%m/%d/%Y'),
-                    "time" : date_time.time().strftime("%H:%M:%S"),
-                    "author" : soup.find('a',{"data-hovercard-type":"user"}).text,
-                    "number" : re.findall("#\d+",soup.find("span",{"class":"opened-by"}).text)[0]
-                }
+            issues = response.xpath('//*[@id="js-repo-pjax-container"]/div[2]/div').extract_first()
+            k = bs4.BeautifulSoup(issues,"lxml").find_all("div")
+            for issue in k:
+                if issue.has_attr("data-id"):
+                    date_time = datetime.strptime(re.sub("[a-zA-Z]"," ",issue.find('relative-time').get('datetime')).strip(" "),"%Y-%m-%d %H:%M:%S")
+                    yield{
+                        "title": issue.find('a',{"class":"link-gray-dark","data-hovercard-type":"pull_request"}).text,
+                        "date" : date_time.date().strftime('%m/%d/%Y'),
+                        "time" : date_time.time().strftime("%H:%M:%S"),
+                        "author" : issue.find('a',{"data-hovercard-type":"user"}).text,
+                        "number" : re.findall("#\d+",issue.find("span",{"class":"opened-by"}).text)[0]
+                    }
                 
             
     def parse_many(self,response):
         issues = response.xpath('//*[@id="js-repo-pjax-container"]/div[2]/div').extract_first()
-        
-        print("issues")
         k = bs4.BeautifulSoup(issues,"lxml").find_all("div")
-        print(len(k))
         for issue in k:
             if issue.has_attr("data-id"):
                 date_time = datetime.strptime(re.sub("[a-zA-Z]"," ",issue.find('relative-time').get('datetime')).strip(" "),"%Y-%m-%d %H:%M:%S")
@@ -78,7 +75,7 @@ class PRSpider(scrapy.Spider):
                     "number" : re.findall("#\d+",issue.find("span",{"class":"opened-by"}).text)[0]
                 }
 
-if __name__=="__main__":
-    process =CrawlerProcess()
-    process.crawl(PRSpider,url ='https://github.com/facebook/react/pulls')
-    process.start()
+# if __name__=="__main__":
+#     process =CrawlerProcess()
+#     process.crawl(PRSpider,url ='https://github.com/CMPN-CODECELL/Hacktoberfest2020/pulls')
+#     process.start()

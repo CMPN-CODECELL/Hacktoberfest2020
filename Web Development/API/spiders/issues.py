@@ -74,7 +74,7 @@ class IssuesSpider(scrapy.Spider):
                 "number" : re.findall("#\d+",soup.find("span",{"class":"opened-by"}).text)[0]
             }
 
-if __name__=="__main__":
-    process =CrawlerProcess()
-    process.crawl(IssuesSpider,url ='https://github.com/CMPN-CODECELL/Hacktoberfest2020/issues')
-    process.start()
+# if __name__=="__main__":
+#     process =CrawlerProcess()
+#     process.crawl(IssuesSpider,url ='https://github.com/CMPN-CODECELL/Hacktoberfest2020/issues')
+#     process.start()
