@@ -20,11 +20,11 @@ Check out our [Contributing Documentation](https://github.com/CMPN-CODECELL/Hack
 
 ## Guidelines
 
-The first step is to register yourself on the Hacktober using your Github account and sign up as a student.
+The first step is to register yourself on the [Hacktoberfest website](https://hacktoberfest.digitalocean.com/) using your Github account and sign up as a student.
 
 Find the open source repositories which interest and go try to pick up issues which you can solve. Once the issue is assigned to you, code away till you resolve the issue :nerd_face: . Once you are done with the coding create a pull request by following the proper **CONTRIBUTING.md** file given in the repository. If the repository doesn't have one, make a pull request following the accepted rules in the open source community :hugs:
 
-You have to make 4 pull requests on any valid repositories. Once you make the pull request, there is a review period of a week.**PLEASE MAKE QUALITY PULL REQUESTS AND NOT SPAM** :rage:  If you make spam pull requests your pull request will be deemed invalid/spam and you will be unelligible to win swag 
+You have to make 4 pull requests on any valid repositories. Once you make the pull request, there is a review period of a week. **PLEASE MAKE QUALITY PULL REQUESTS AND NOT SPAM** :rage:  If you make spam pull requests your pull request will be deemed invalid/spam and you will be unelligible to win swag 
 
 
 ## Prizes
