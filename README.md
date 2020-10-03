@@ -11,6 +11,9 @@
 ![Watch](https://img.shields.io/github/watchers/CMPN-CODECELL/Hacktoberfest2020?label=Watch&style=social)
 
 # Hacktoberfest 2020
+
+![Hacktoberfest 2020](HF2020_Events.png)
+
 ## :wave:
 ## Welcome
 A guide to help you contribute to Hacktoberfest 2020 and to get you started towards Open Source Contribution 😉 
