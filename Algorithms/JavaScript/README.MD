@@ -1,4 +1,4 @@
-#### JavaScript
+#### Javascript
 
 Here you can add your code in the respective algorithm folder :grimacing:
 
