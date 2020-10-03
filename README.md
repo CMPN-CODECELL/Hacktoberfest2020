@@ -29,7 +29,11 @@ You have to make 4 pull requests on any valid repositories. Once you make the pu
 
 ## Prizes
 
-Make 4 valid Pull requests in the month of October to be elligible for a limited edition T-shirt or plant a tree :innocent:. The first 70,000 winners are elligible for the prizes 
+Make 4 valid Pull requests in the month of October to be elligible for a limited edition T-shirt or plant a tree :innocent:. The first 70,000 winners are elligible for the prizes
+
+## Special Prizes
+
+Top 3 contirbutors from Computer Department of VESIT get some special prizes from out local event sponsor(GitHub).
 
 ## Hall of Fame 
 [![](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/images/0)](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/links/0)
