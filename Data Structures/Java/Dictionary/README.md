@@ -1,2 +1,2 @@
-# Hacktoberfest2020
-A guide to help you contribute to Hacktoberfest 2020 and to get you started towards Open Source Contribution
+# Dictionary
+Submit a basic implementation of  dictionary in java with basic operations like insertion with keys, searching of values using keys etc.

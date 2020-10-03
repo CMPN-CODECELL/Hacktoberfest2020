@@ -5,14 +5,21 @@ This is a supervised classification problem.
 
 A few example solutions:
 
-Logistic Regression
-Random Forest Classifier
-SVM Classifier
-Decision Tree
-K-Means
-Gradient Boosting (XGBoost, CatBoost)
-Neural networks
-Other
+- Logistic Regression
+
+- Random Forest Classifier
+
+- SVM Classifier
+
+- Decision Tree
+
+- K-Means
+
+- Gradient Boosting (XGBoost, CatBoost)
+
+- Neural networks
+
+- Other
 
 ## Suggestions/guides:
 

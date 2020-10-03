@@ -1,2 +1,2 @@
-# Hacktoberfest2020
-A guide to help you contribute to Hacktoberfest 2020 and to get you started towards Open Source Contribution
+# Binary Search Tree
+Submit a basic implementation of binary search tree, with basic operations like searching, insertion etc.

@@ -5,9 +5,9 @@ One flower species is linearly separable from the other two, but the other two a
 
 The columns in this dataset are:
 
-Id
-SepalLengthCm
-SepalWidthCm
-PetalLengthCm
-PetalWidthCm
-Species
+- Id
+- SepalLengthCm
+- SepalWidthCm
+- PetalLengthCm
+- PetalWidthCm
+- Species

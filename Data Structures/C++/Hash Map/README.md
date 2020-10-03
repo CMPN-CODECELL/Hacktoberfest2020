@@ -1,2 +1,2 @@
-# Hacktoberfest2020
-A guide to help you contribute to Hacktoberfest 2020 and to get you started towards Open Source Contribution
+# Hash Map
+Submit a basic implementation of unordered map in C++ STL
