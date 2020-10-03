@@ -33,7 +33,7 @@ Make 4 valid Pull requests in the month of October to be elligible for a limited
 
 ## Special Prizes
 
-Top 3 contirbutors from Computer Department of VESIT get some special prizes from out local event sponsor(GitHub).
+Top 3 contributors of VESIT will get some special prizes from our local event sponsor(GitHub).
 
 ## Hall of Fame 
 [![](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/images/0)](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/links/0)
