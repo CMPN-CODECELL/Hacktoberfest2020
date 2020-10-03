@@ -1,0 +1,16 @@
+#name: Pull Request Spamtoberfest checker
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Spamtoberfest
+        uses: maximelafarie/spamtoberfest@main
+        with:
+          action-type: close # default is flag
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
