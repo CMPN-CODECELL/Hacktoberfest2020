@@ -40,5 +40,13 @@ Top 3 contributors of VESIT will get some special prizes from our local event sp
 
 ## Hall of Fame 
 
+[![](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/images/0)](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/links/0)
+[![](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/images/1)](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/links/1)
+[![](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/images/2)](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/links/2)
+[![](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/images/3)](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/links/3)
+[![](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/images/4)](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/links/4)
+[![](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/images/5)](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/links/5)
+[![](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/images/6)](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/links/6)
+[![](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/images/7)](https://sourcerer.io/fame/thewires2/CMPN-CODECELL/Hacktoberfest2020/links/7)
 
 ### If this repository helped you in anyway, please leave a star :star: on our repository :blush:
