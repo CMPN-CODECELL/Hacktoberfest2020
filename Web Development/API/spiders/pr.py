@@ -6,14 +6,13 @@ import re
 import bs4
 from datetime import datetime
 
-
+# Creating the issues spider
 class PRSpider(scrapy.Spider):
     name = "pr"
     def __init__(self, *args, **kwargs):
         super(PRSpider, self).__init__(*args, **kwargs)
         url = kwargs.get('url')
         self.home_site = "https://github.com/"
-        self.count = 0
         self.data=[]
         self.start_urls = [url]
         print(url)
@@ -34,10 +33,12 @@ class PRSpider(scrapy.Spider):
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36"
         }
     
+    # Passing the start url and the headers to the parse function
     def start_requests(self):    
         yield scrapy.Request(url=self.start_urls[0], callback=self.parse, headers=self.headers )
 
 
+    # The parse function if there is no pagination    
     def parse(self,response):
         pages = response.xpath('//*[@id="js-repo-pjax-container"]/div[2]/div/div/div[5]/div/a/text()').extract()
         if(len(pages)>0):
@@ -47,11 +48,14 @@ class PRSpider(scrapy.Spider):
             for url in urls:
                 yield scrapy.Request(url=url, callback=self.parse_many, headers=self.headers )
         else:
+            # Extracting divs containing the details about the issues 
             issues = response.xpath('//*[@id="js-repo-pjax-container"]/div[2]/div').extract_first()
+            # Creating a soup to scrape the data from the divs
             k = bs4.BeautifulSoup(issues,"lxml").find_all("div")
             for issue in k:
                 if issue.has_attr("data-id"):
                     date_time = datetime.strptime(re.sub("[a-zA-Z]"," ",issue.find('relative-time').get('datetime')).strip(" "),"%Y-%m-%d %H:%M:%S")
+                    # Result dictionary
                     yield{
                         "title": issue.find('a',{"class":"link-gray-dark","data-hovercard-type":"pull_request"}).text,
                         "date" : date_time.date().strftime('%m/%d/%Y'),
@@ -62,11 +66,14 @@ class PRSpider(scrapy.Spider):
                 
             
     def parse_many(self,response):
+        # Extracting divs containing the details about the issues 
         issues = response.xpath('//*[@id="js-repo-pjax-container"]/div[2]/div').extract_first()
+        # Creating a soup to scrape the data from the divs
         k = bs4.BeautifulSoup(issues,"lxml").find_all("div")
         for issue in k:
             if issue.has_attr("data-id"):
                 date_time = datetime.strptime(re.sub("[a-zA-Z]"," ",issue.find('relative-time').get('datetime')).strip(" "),"%Y-%m-%d %H:%M:%S")
+                # Result dictionary
                 yield{
                     "title": issue.find('a',{"class":"link-gray-dark","data-hovercard-type":"pull_request"}).text,
                     "date" : date_time.date().strftime('%m/%d/%Y'),

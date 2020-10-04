@@ -6,17 +6,15 @@ import re
 import bs4
 from datetime import datetime
 
-
+# Creating the issues spider
 class IssuesSpider(scrapy.Spider):
     name = "issue"
     def __init__(self, *args, **kwargs):
         super(IssuesSpider, self).__init__(*args, **kwargs)
         url = kwargs.get('url')
         self.home_site = "https://github.com/"
-        self.count = 0
         self.data=[]
         self.start_urls = [url]
-        print(url)
         self.headers = {
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
                 "Accept-Encoding": "gzip, deflate, br",
@@ -33,11 +31,11 @@ class IssuesSpider(scrapy.Spider):
                 "Upgrade-Insecure-Requests": "1",
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36"
         }
-    
+    # Passing the start url and the headers to the parse function
     def start_requests(self):    
         yield scrapy.Request(url=self.start_urls[0], callback=self.parse, headers=self.headers )
 
-
+    # The parse function if there is no pagination    
     def parse(self,response):
         pages = response.xpath('//*[@id="js-repo-pjax-container"]/div[2]/div/div/div[5]/div/a/text()').extract()
         if(len(pages)>0):
@@ -46,11 +44,14 @@ class IssuesSpider(scrapy.Spider):
             for url in urls:
                 yield scrapy.Request(url=url, callback=self.parse_many, headers=self.headers )
         else:
+            # Extracting divs containing the details about the issues 
             issues = response.xpath('//*[@id="js-repo-pjax-container"]/div[2]/div/div/div[4]/div[2]/div/div').extract()
             for issue in issues:
                 html = issue
+                # Creating a soup to scrape the data from the divs
                 soup = bs4.BeautifulSoup(html, 'lxml')
                 date_time = datetime.strptime(re.sub("[a-zA-Z]"," ",soup.find('relative-time').get('datetime')).strip(" "),"%Y-%m-%d %H:%M:%S")
+                # Result dictionary
                 yield{
                     "title": soup.find('a',{"class":"link-gray-dark","data-hovercard-type":"issue"}).text,
                     "date" : date_time.date().strftime('%m/%d/%Y'),
@@ -59,13 +60,16 @@ class IssuesSpider(scrapy.Spider):
                     "number" : re.findall("#\d+",soup.find("span",{"class":"opened-by"}).text)[0]
                 }
                 
-            
+    # The parse function if there is pagination    
     def parse_many(self,response):
+        # Extracting divs containing the details about the issues 
         issues = response.xpath('//*[@id="js-repo-pjax-container"]/div[2]/div/div/div[4]/div[2]/div/div').extract()
         for issue in issues:
             html = issue
+            # Creating a soup to scrape the data from the divs
             soup = bs4.BeautifulSoup(html, 'lxml')
             date_time = datetime.strptime(re.sub("[a-zA-Z]"," ",soup.find('relative-time').get('datetime')).strip(" "),"%Y-%m-%d %H:%M:%S")
+            # Result dictionary
             yield{
                 "title": soup.find('a',{"class":"link-gray-dark","data-hovercard-type":"issue"}).text,
                 "date" : date_time.date().strftime('%m/%d/%Y'),
@@ -73,8 +77,3 @@ class IssuesSpider(scrapy.Spider):
                 "author" : soup.find('a',{"data-hovercard-type":"user"}).text,
                 "number" : re.findall("#\d+",soup.find("span",{"class":"opened-by"}).text)[0]
             }
-
-# if __name__=="__main__":
-#     process =CrawlerProcess()
-#     process.crawl(IssuesSpider,url ='https://github.com/CMPN-CODECELL/Hacktoberfest2020/issues')
-#     process.start()
