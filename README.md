@@ -36,7 +36,7 @@ Make 4 valid Pull requests in the month of October to be elligible for a limited
 
 ## Special Prizes
 
-Top 3 contributors of VESIT will get some special prizes from our local event sponsor(GitHub).
+Top 3 contributors of VESIT will get some special prizes from our local event sponsor (GitHub).
 
 ## Hall of Fame 
 
