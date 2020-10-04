@@ -48,3 +48,4 @@ Paste the following code into it
 
 This works like a charm.
 
+By running heroku logs --tail you can check any errors that you encounter while deploying
