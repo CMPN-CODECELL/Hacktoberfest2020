@@ -1,0 +1,8 @@
+pandas==1.0.5
+streamlit==0.64.0
+numpy==1.18.5
+Keras==2.4.3
+Pillow==7.2.0
+TensorFlow==2.3
+scipy==1.4.1
+setuptools>=41.0.0
