@@ -1,0 +1,32 @@
+body {
+  background-image: linear-gradient(to bottom right, red , yellow);
+  background-color: #C9C6CA;
+  color: floralwhite;
+}
+.navbar-brand {
+    color: floralwhite;
+    opacity: 0.8
+}
+.navbar-brand:hover {
+    opacity: 1
+}
+.navbar-dark, .navbar-toggler-icon {
+  background-color: #030200;
+}
+.nav-link {
+  font-size: 20px;
+}
+.nav-link:hover {
+  color: floralwhite !important;
+}
+.dropdown-menu {
+  background-color: #030200;
+}
+.dropdown-item, .dropdown-divider {
+  color: floralwhite;
+}
+.dropdown-item:hover {
+  background-color: floralwhite;
+  opacity: 1;
+  font-weight: bold;
+}
