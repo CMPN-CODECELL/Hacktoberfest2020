@@ -49,14 +49,34 @@ body {
 .pokeCardElectric {
     background-image: linear-gradient(to bottom right, yellow, darkorange);
 }
+.pokeCardElectric:hover {
+    box-shadow: 0 5px 15px orange;
+    transition: transform 300ms;
+    transform: scale(1.05);
+}
 .pokeCardGrass {
     background-image: linear-gradient(to bottom right, lightgreen, darkgreen);
+}
+.pokeCardGrass:hover {
+    box-shadow: 0 5px 15px lightgreen;
+    transition: transform 300ms;
+    transform: scale(1.05);
 }
 .pokeCardFire {
     background-image: linear-gradient(to bottom right, red, darkorange);
 }
+.pokeCardFire:hover {
+    box-shadow: 0 5px 15px darkred;
+    transition: transform 300ms;
+    transform: scale(1.05);
+}
 .pokeCardWater {
     background-image: linear-gradient(to bottom right, purple, darkblue);
+}
+.pokeCardWater:hover {
+    box-shadow: 0 5px 15px #0ff;
+    transition: transform 300ms;
+    transform: scale(1.05);
 }
 .pokeImg {
     width: 70px;
