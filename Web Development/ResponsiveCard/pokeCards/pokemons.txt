@@ -101,3 +101,17 @@ Incineroar
 Popplio
 Brionne
 Primarina
+
+# Gen 8 (Galar)
+
+Grookey
+Thwackey
+Rillaboom
+
+Scorbunny
+Raboot
+Cinderace
+
+Sobble
+Drizzile
+Inteleon
