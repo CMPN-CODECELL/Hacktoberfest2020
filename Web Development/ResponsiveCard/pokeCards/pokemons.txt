@@ -1,0 +1,15 @@
+A list of all the starter pokemons!
+
+# Gen 1
+
+Pichu
+Pikachu
+Raichu
+
+Charmander
+Charmeleon
+Charizard
+
+Squirtle
+Wartortle
+Blastoise
