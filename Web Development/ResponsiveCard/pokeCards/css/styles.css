@@ -177,6 +177,33 @@ body {
     #empoleon {
         padding-right: 20px;
     }
+    #snivy {
+        padding-right: 20px;
+    }
+    #servine {
+        padding-right: 20px;
+    }
+    #serperior {
+        padding-right: 20px;
+    }
+    #tepig {
+        padding-right: 20px;
+    }
+    #pignite {
+        padding-right: 20px;
+    }
+    #emboar {
+        padding-right: 20px;
+    }
+    #oshawott {
+        padding-right: 20px;
+    }
+    #dewott {
+        padding-right: 10px;
+    }
+    #samurott {
+        padding-right: 20px;
+    }
 }
 @media (min-width: 992px) {
     .pokeImg {
