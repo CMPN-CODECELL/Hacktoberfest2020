@@ -87,3 +87,17 @@ Delphox
 Froakie
 Frogadier
 Greninja
+
+# Gen 7 (Alola)
+
+Rowlet
+Dartrix
+Desidueye
+
+Litten
+Torracat
+Incineroar
+
+Popplio
+Brionne
+Primarina
