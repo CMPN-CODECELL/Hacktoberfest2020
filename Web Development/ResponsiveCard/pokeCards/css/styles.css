@@ -123,6 +123,33 @@ body {
     #feraligatr {
         padding-right: 20px;
     }
+    #treecko {
+        padding-right: 20px;
+    }
+    #grovyle {
+        padding-right: 20px;
+    }
+    #sceptile {
+        padding-right: 20px;
+    }
+    #torchic {
+        padding-right: 20px;
+    }
+    #combusken {
+        padding-right: 20px;
+    }
+    #blaziken {
+        padding-right: 20px;
+    }
+    #mudkip {
+        padding-right: 20px;
+    }
+    #marshtomp {
+        padding-right: 20px;
+    }
+    #swampert {
+        padding-right: 20px;
+    }
 }
 @media (min-width: 992px) {
     .pokeImg {
