@@ -204,6 +204,33 @@ body {
     #samurott {
         padding-right: 20px;
     }
+    #chespin {
+        padding-right: 20px;
+    }
+    #quilladin {
+        padding-right: 20px;
+    }
+    #chesnaught {
+        padding-right: 10px;
+    }
+    #fennekin {
+        padding-right: 20px;
+    }
+    #braixen {
+        padding-right: 20px;
+    }
+    #delphox {
+        padding-right: 20px;
+    }
+    #froakie {
+        padding-right: 20px;
+    }
+    #frogadier {
+        padding-right: 20px;
+    }
+    #greninja {
+        padding-right: 20px;
+    }
 }
 @media (min-width: 992px) {
     .pokeImg {
@@ -215,6 +242,9 @@ body {
         padding-left: 25px;
     }
     #venusaur {
+        width: 160px;
+    }
+    #chesnaught {
         width: 160px;
     }
 }
