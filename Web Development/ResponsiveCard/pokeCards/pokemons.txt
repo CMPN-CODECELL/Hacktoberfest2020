@@ -31,3 +31,17 @@ Typhlosion
 Totodile
 Croconaw
 Feraligatr
+
+# Gen 3 (Hoenn)
+
+Treeko
+Grovyle
+Sceptile
+
+Torchic
+Combusken
+Blaziken
+
+Mudkip
+Marshtomp
+Swampert
