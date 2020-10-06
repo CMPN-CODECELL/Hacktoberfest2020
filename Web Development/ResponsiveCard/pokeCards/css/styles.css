@@ -96,6 +96,33 @@ body {
     #blastoise {
         padding-right: 20px;
     }
+    #chikorita {
+        padding-right: 10px;
+    }
+    #bayleef {
+        padding-right: 20px;
+    }
+    #meganium {
+        padding-right: 20px;
+    }
+    #cyndaquil {
+        padding-right: 20px;
+    }
+    #quilava {
+        padding-right: 20px;
+    }
+    #typhlosion {
+        padding-right: 20px;
+    }
+    #totodile {
+        padding-right: 20px;
+    }
+    #croconaw {
+        padding-right: 20px;
+    }
+    #feraligatr {
+        padding-right: 20px;
+    }
 }
 @media (min-width: 992px) {
     .pokeImg {
