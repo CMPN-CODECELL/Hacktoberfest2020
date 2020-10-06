@@ -59,3 +59,17 @@ Infernape
 Piplup
 Prinplup
 Empoleon
+
+# Gen 5 (Unova)
+
+Snivy
+Servine
+Serperior
+
+Tepig
+Pignite
+Emboar
+
+Oshawott
+Dewott
+Samurott
