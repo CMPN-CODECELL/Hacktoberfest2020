@@ -231,6 +231,33 @@ body {
     #greninja {
         padding-right: 20px;
     }
+    #rowlet {
+        padding-right: 20px;
+    }
+    #dartrix {
+        padding-right: 20px;
+    }
+    #decidueye {
+        padding-right: 20px;
+    }
+    #litten {
+        padding-right: 20px;
+    }
+    #torracat {
+        padding-right: 20px;
+    }
+    #incineroar {
+        padding-right: 10px;
+    }
+    #popplio {
+        padding-right: 20px;
+    }
+    #brionne {
+        padding-right: 20px;
+    }
+    #primarina {
+        padding-right: 20px;
+    }
 }
 @media (min-width: 992px) {
     .pokeImg {
