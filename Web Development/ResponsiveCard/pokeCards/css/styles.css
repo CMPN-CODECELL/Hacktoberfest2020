@@ -46,6 +46,67 @@ body {
     font-weight: bold;
     text-align: center;
 }
-.pokeCard {
-    
+.pokeCardElectric {
+    background-image: linear-gradient(to bottom right, yellow, darkorange);
+}
+.pokeCardGrass {
+    background-image: linear-gradient(to bottom right, lightgreen, darkgreen);
+}
+.pokeCardFire {
+    background-image: linear-gradient(to bottom right, red, darkorange);
+}
+.pokeCardWater {
+    background-image: linear-gradient(to bottom right, purple, darkblue);
+}
+.pokeImg {
+    width: 70px;
+    height: 70px;
+}
+@media (max-width: 992px) {
+    #pichu {
+        padding-right: 20px;
+    }
+    #pikachu {
+        padding-right: 20px;
+    }
+    #bulbasaur {
+        padding-right: 20px;
+    }
+    #ivysaur {
+        padding-right: 20px;
+    }
+    #venusaur {
+        padding-right: 20px;
+    }
+    #charmander {
+        padding-right: 20px;
+    }
+    #charmeleon {
+        padding-right: 10px;
+    }
+    #charizard {
+        padding-right: 20px;
+    }
+    #squirtle {
+        padding-right: 20px;
+    }
+    #wartortle {
+        padding-right: 20px;
+    }
+    #blastoise {
+        padding-right: 20px;
+    }
+}
+@media (min-width: 992px) {
+    .pokeImg {
+        width: 150px;
+        height: 150px;
+    }
+    #raichu {
+        width: 180px;
+        padding-left: 25px;
+    }
+    #venusaur {
+        width: 160px;
+    }
 }
