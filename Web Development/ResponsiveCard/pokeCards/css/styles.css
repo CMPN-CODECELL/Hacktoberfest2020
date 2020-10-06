@@ -150,6 +150,33 @@ body {
     #swampert {
         padding-right: 20px;
     }
+    #turtwig {
+        padding-right: 20px;
+    }
+    #grotle {
+        padding-right: 20px;
+    }
+    #torterra {
+        padding-right: 20px;
+    }
+    #chimchar {
+        padding-right: 20px;
+    }
+    #monferno {
+        padding-right: 20px;
+    }
+    #infernape {
+        padding-right: 20px;
+    }
+    #piplup {
+        padding-right: 20px;
+    }
+    #prinplup {
+        padding-right: 20px;
+    }
+    #empoleon {
+        padding-right: 20px;
+    }
 }
 @media (min-width: 992px) {
     .pokeImg {
