@@ -258,6 +258,33 @@ body {
     #primarina {
         padding-right: 20px;
     }
+    #grookey {
+        padding-right: 20px;
+    }
+    #thwackey {
+        padding-right: 20px;
+    }
+    #rillaboom {
+        padding-right: 20px;
+    }
+    #scorbunny {
+        padding-right: 20px;
+    }
+    #raboot {
+        padding-right: 20px;
+    }
+    #cinderace {
+        padding-right: 20px;
+    }
+    #sobble {
+        padding-right: 20px;
+    }
+    #drizzile {
+        padding-right: 20px;
+    }
+    #inteleon {
+        padding-right: 20px;
+    }
 }
 @media (min-width: 992px) {
     .pokeImg {
