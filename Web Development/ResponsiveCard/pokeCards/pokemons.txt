@@ -34,7 +34,7 @@ Feraligatr
 
 # Gen 3 (Hoenn)
 
-Treeko
+Treecko
 Grovyle
 Sceptile
 
@@ -92,7 +92,7 @@ Greninja
 
 Rowlet
 Dartrix
-Desidueye
+Decidueye
 
 Litten
 Torracat
