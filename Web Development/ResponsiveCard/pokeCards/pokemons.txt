@@ -1,10 +1,14 @@
 A list of all the starter pokemons!
 
-# Gen 1
+# Gen 1 (Kanto)
 
 Pichu
 Pikachu
 Raichu
+
+Bulbasaur
+Ivysaur
+Venusaur
 
 Charmander
 Charmeleon
@@ -13,3 +17,17 @@ Charizard
 Squirtle
 Wartortle
 Blastoise
+
+# Gen 2 (Jhoto)
+
+Chikorita
+Bayleef
+Meganium
+
+Cyndaquil
+Quilava
+Typhlosion
+
+Totodile
+Croconaw
+Feraligatr
