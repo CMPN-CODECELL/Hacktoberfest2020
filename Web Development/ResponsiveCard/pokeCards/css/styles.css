@@ -1,0 +1,29 @@
+.navbar-dark {
+    background-image: linear-gradient(to bottom right, purple, red);
+}
+.navbar-brand {
+    color: floralwhite;
+    font-weight: bold;
+    opacity: 0.8;
+    font-size: 25px;
+}
+.navbar-brand:hover {
+    opacity: 1;
+}
+.nav-link {
+    font-size: 20px;
+}
+.nav-link:hover {
+    color: floralwhite !important;
+}
+.dropdown-menu {
+    background-image: linear-gradient(to bottom right, purple, red);
+}
+.dropdown-item, .dropdown-divider {
+    color: floralwhite;
+}
+.dropdown-item:hover {
+    background-color: floralwhite;
+    opacity: 1;
+    font-weight: bold;
+}
