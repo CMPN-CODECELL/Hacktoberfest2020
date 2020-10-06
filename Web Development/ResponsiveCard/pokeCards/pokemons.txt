@@ -45,3 +45,17 @@ Blaziken
 Mudkip
 Marshtomp
 Swampert
+
+# Gen 4 (Sinnoh)
+
+Turtwig
+Grotle
+Torterra
+
+Chimchar
+Monferno
+Infernape
+
+Piplup
+Prinplup
+Empoleon
