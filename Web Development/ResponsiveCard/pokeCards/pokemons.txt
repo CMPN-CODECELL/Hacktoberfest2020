@@ -73,3 +73,17 @@ Emboar
 Oshawott
 Dewott
 Samurott
+
+# Gen 6 (Kalos)
+
+Chespin
+Quilladin
+Chesnaught
+
+Fennekin
+Braixen
+Delphox
+
+Froakie
+Frogadier
+Greninja
