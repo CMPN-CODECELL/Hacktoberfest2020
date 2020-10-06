@@ -1,5 +1,8 @@
+body {
+    background-color: #4B4F4F;
+}
 .navbar-dark {
-    background-image: linear-gradient(to bottom right, purple, red);
+    background-image: linear-gradient(to bottom right, red, darkorange);
 }
 .navbar-brand {
     color: floralwhite;
@@ -17,7 +20,7 @@
     color: floralwhite !important;
 }
 .dropdown-menu {
-    background-image: linear-gradient(to bottom right, purple, red);
+    background-image: linear-gradient(to bottom right, red, darkorange);
 }
 .dropdown-item, .dropdown-divider {
     color: floralwhite;
@@ -26,4 +29,20 @@
     background-color: floralwhite;
     opacity: 1;
     font-weight: bold;
+}
+.introCard {
+    background-image: linear-gradient(to bottom right, #3E0862, #0BD0A9);
+    color: #E0FFFF;
+    box-shadow: 0 5px 15px floralwhite;
+    transform: scale(1.03);
+}
+.introCard:hover {
+    transition: transform 300ms;
+    box-shadow: 0 5px 15px #0ff;
+}
+.card-header {
+    background-image: linear-gradient(to bottom right, red, orange);
+    color: floralwhite;
+    font-weight: bold;
+    text-align: center;
 }
