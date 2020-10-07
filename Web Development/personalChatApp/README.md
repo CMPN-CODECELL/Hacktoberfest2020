@@ -10,19 +10,19 @@ node index
 ```
 ### 2. Then open your index.html via live server or by copying the relative path in the browser url
 
-![rel-path](images/rel-path.png)
+![rel-path](readme_images/rel-path.png)
 
 ### 3. Then You have to enter your name in the prompt 
 
-![joined](images/joined.png)
+![joined](readme_images/joined.png)
 
 ### 4. Whenever a new user joined you get an alert at the top 
 
-![new-joined](images/new-joined.png)
+![new-joined](readme_images/new-joined.png)
 
 ### 5. Then you can start your conversion and each user's name is displayed before the message
 
-![send-recieve](images/send-recieve.png)
+![send-recieve](readme_images/send-recieve.png)
 
 ## For More projects like this please visit my github website
 
