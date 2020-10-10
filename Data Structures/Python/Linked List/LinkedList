@@ -1,0 +1,68 @@
+linked_list=[]
+choice=0
+while choice!=9:
+    print ( "1.Add element at position" )
+    print ( "2.Add element at the end" )
+    print ( "3.Add element at the beginning" )
+    print ( "4.Display linked list" )
+    print ( "5.Remove element")
+    print ( "6.Remove element based on position" )
+    print ( "7.Search for the element" )
+    print ( "8.Replace an element based on position" )
+    print ( "9.Exit")
+    choice=int (input ("Enter one operation number "))
+    if choice==1 :
+        pos =int (input ("Enter position" ) )
+        elem= input ( "Enter element" )
+        linked_list . insert (pos , elem)
+        print ( "Element added" )
+        print()
+    elif choice==2 :
+        elem= input ("Enter element")
+        linked_list. append (elem)
+        print ( "Element added to the end !" )
+        print()
+    elif choice==3 :
+        elem= input ( " Enter element" )
+        linked_list. insert (0 , elem )
+        print ( "Element Added at the start! " )
+        print()
+    elif choice==4:
+        print ()
+        for x in linked_list:
+            print (x, end= ' ' )
+        print ()
+    elif choice==5:
+        elem = input ("Enter element" )
+        if elem in linked_list:
+            linked_list.remove (elem)
+            print (elem," removed! ")
+            print()
+    elif choice==6:
+        pos=int(input("Enter position"))
+        if pos>=len(linked_list) or pos<0:
+            print("Invalid Position!")
+            print()
+        else:
+            removed=linked_list.pop(pos)
+            print(removed," was removed!")
+            print()
+    elif choice==7:
+        elem=input("Enter element")
+        if elem in linked_list:
+            print("Element Found")
+            print()
+        else:
+            print("Element Not Found")
+            print()
+    elif choice==8:
+        pos = int(input("Enter position"))
+        elem = input("Enter element")
+        linked_list[pos]=elem
+        linked_list.pop(pos)
+        linked_list.insert(pos,elem)
+    elif choice==9:
+        print("Exiting Program")
+        print()
+    else:
+        print("Invalid Option")

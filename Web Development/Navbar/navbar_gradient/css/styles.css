@@ -1,0 +1,30 @@
+body {
+  background-color: #030200;
+  color: floralwhite;
+}
+.navbar-brand {
+    color: #030200 !important;
+    font-weight: bold;
+    opacity: 0.8
+}
+.navbar-brand:hover {
+    opacity: 1
+}
+.navbar-dark {
+  background-image: linear-gradient(to top left, red , yellow);
+}
+.nav-link {
+    color: #030200 !important;
+    font-size: 20px;
+}
+.nav-link:hover {
+  color: #030200 !important;
+}
+.dropdown-menu {
+  background-image: linear-gradient(to top left, #8418F6 , #18F6C0);
+}
+.dropdown-item:hover {
+  background-image: linear-gradient(to top left, red , yellow);
+  opacity: 1;
+  font-weight: bold;
+}

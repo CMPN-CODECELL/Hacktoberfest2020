@@ -1,0 +1,16 @@
+{
+  "name": "puppycarousel",
+  "version": "1.0.0",
+  "description": "A simple Bootstrap Carousel",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mcvean Soans",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}

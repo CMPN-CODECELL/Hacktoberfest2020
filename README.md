@@ -53,7 +53,7 @@ According to the official [**Hacktoberfest website**](https://hacktoberfest.digi
 
 ## Prizes
 
-Make **4 valid Pull requests** in the month of October to be elligible for a limited edition T-shirt or plant a tree :innocent:. The first 70,000 winners are eligible for the prizes.
+Make **4 valid Pull requests** in the month of October to be eligible for a limited edition T-shirt or plant a tree :innocent:. The first 70,000 winners are eligible for the prizes.
 
 ## Special Prizes
 
