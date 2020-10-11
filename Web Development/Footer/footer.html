@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>footer</title>
+        <meta name="description" content="footer">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+            }
+            footer{
+                width: 100vw;
+                height: 2rem;
+                line-height: 2rem;
+                background-color: #434343;
+                text-align: center;
+                margin-top: auto;
+                letter-spacing: .2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div>dsadsa</div>
+        <footer>Hactoberfest &copy;<span id="displayYear"></span></footer>
+        <script>
+            document.getElementById("displayYear").innerHTML = new Date().getFullYear();
+        </script>
+    </body>
+</html>
