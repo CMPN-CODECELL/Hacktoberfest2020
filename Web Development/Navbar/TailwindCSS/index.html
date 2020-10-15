@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <title>Navbar light</title>
+  </head>
+  <style>
+    .hamburger {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 30px;
+      height: 4px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    .open .bar1 {
+      transform: rotate(-45deg) translate(-7px, 7px);
+    }
+
+    .open .bar2 {
+      opacity: 0;
+    }
+
+    .open .bar3 {
+      transform: rotate(45deg) translate(-7px, -7px);
+    }
+  </style>
+  <body>
+    <header class="bg-gray-900 sm:flex sm:justify-between">
+      <div class="py-3 px-4 flex items-center justify-between">
+        <div class="text-lg flex flex-col items-center justify-center">
+          <div class="block text-pink-400 py-0 text-2xl">Hacktober fest</div>
+          <div class="block text-purple-200 text-lg ml-2 text-center">2020</div>
+        </div>
+        <div class="sm:hidden">
+          <button
+            type="button"
+            class="mx-2 text-gray-500 focus:text-white focus:outline-none"
+            id="hamburger"
+          >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </button>
+        </div>
+      </div>
+      <div
+        class="px-2 pt-2 pb-4 hidden sm:block sm:flex sm:items-center"
+        id="menuItems"
+      >
+        <a
+          href="#"
+          class="block text-white font-semibold mt-1 px-2 rounded hover:bg-gray-800 sm:mt-0 sm:ml-2"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="block text-white font-semibold mt-1 px-2 rounded hover:bg-gray-800 sm:mt-0 sm:ml-2"
+          >Profile</a
+        >
+        <a
+          href="#"
+          class="block text-white font-semibold mt-1 px-2 rounded hover:bg-gray-800 sm:mt-0 sm:ml-2"
+          >Contact</a
+        >
+      </div>
+    </header>
+  </body>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const menuButton = document.getElementById('hamburger');
+      const menuItems = document.getElementById('menuItems');
+
+      menuButton.addEventListener('click', () => {
+        menuButton.classList.toggle('open');
+        menuItems.classList.toggle('block');
+        menuItems.classList.toggle('hidden');
+      });
+    });
+  </script>
+</html>
