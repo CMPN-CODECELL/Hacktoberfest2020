@@ -1,0 +1,37 @@
+{% extends "catalog/base_generic.html" %}
+{% block content %}
+
+<style> 
+        input{ 
+            width:100%; 
+            padding: 12px; 
+            } 
+    </style>
+
+<div class="col-sm-7 mx-5">
+  <h2>Add Genre</h2>
+</div>
+
+<form method="post">
+  	{% csrf_token %}
+  	{% for field in form %}
+      <div class="form-group row mx-5 mt-4">
+        <div class="col-sm-2 col-form-label">{{ field.label_tag }}</div>
+          <div class="col-sm-7">
+            {{field}} <br>
+            {% if field.help_text %}
+              <small style="color: grey">{{ field.help_text }}</small>
+            {% endif %}
+            {% for error in field.errors %}
+              <p style="color: red">{{ error }}</p>
+            {% endfor %}
+          </div>
+      </div>  
+    {% endfor %}
+
+    <div class="form-group row mx-5">
+      <button type="submit" class="btn btn-info btn-block">Submit</button>
+    </div>
+</form>
+
+{% endblock %}

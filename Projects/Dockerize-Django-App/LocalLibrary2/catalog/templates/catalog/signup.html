@@ -1,0 +1,35 @@
+{% extends 'catalog/base_generic.html' %}
+{% block content %}
+
+<style> 
+        input{ 
+            width:100%; 
+            padding: 12px; 
+            } 
+    </style> 
+
+<div class="col-sm-7">
+  <h2>Sign up</h2> </div><hr/>
+  <form method="post">
+    {% csrf_token %}
+    {% for field in form %}
+      <div class="form-group row mt-4 ">
+        <div class="col-sm-2 col-form-label">{{ field.label_tag }}</div>
+          <div class="col-sm-7">
+            {{field}} <br>
+            {% if field.help_text %}
+              <small style="color: grey">{{ field.help_text }}</small>
+            {% endif %}
+            {% for error in field.errors %}
+              <p style="color: red">{{ error }}</p>
+            {% endfor %}
+          </div>
+      </div>
+    {% endfor %}
+  
+    <div class="form-group row">
+      <button type="submit" class="btn btn-info btn-block">Sign up</button>
+    </div>
+</form>
+
+{% endblock %}

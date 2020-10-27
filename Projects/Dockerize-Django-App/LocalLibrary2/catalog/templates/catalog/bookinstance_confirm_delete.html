@@ -1,0 +1,14 @@
+{% extends "catalog/base_generic.html" %}
+{% block content %}
+
+<div class="col-sm-7 mx-5">
+	<h2>Are You Sure User Return This Book {{bookinstance.book}}</h2>
+
+	<form action="" method="POST">
+  		{% csrf_token %}
+  		<button class="btn btn-info" type="submit"> Yes, delete</button>
+	</form>
+	
+</div>
+
+{% endblock %}

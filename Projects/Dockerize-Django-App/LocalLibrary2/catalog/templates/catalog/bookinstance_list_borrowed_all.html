@@ -1,0 +1,22 @@
+{% extends "catalog/base_generic.html" %}
+{% block content %}
+
+<div class="col-sm-7 mx-5">
+  {% if perms.catalog.can_mark_returned %}
+    <h2>All Borrowed Books</h2><hr/>
+    {% if bookinstance_list %}
+      {% for bookinst in bookinstance_list %} 
+        <p class="{% if bookinst.is_overdue %}text-danger{% endif %}">
+        <a href="{% url 'catalog:book-detail' bookinst.book.pk %}">{{bookinst.book.title}} ({{ bookinst.due_back }}) - {{ bookinst.borrower }}</a> 
+        </p>
+        <button class="btn btn-info btn-sm"><a href="{% url 'catalog:renew-book-librarian' bookinst.id %}">Renew</a> </button>
+        <button class="btn btn-info btn-sm"><a href="{% url 'catalog:book_instance_delete' bookinst.id %}">Delete if book returned</a> </button> <hr/>
+      {% endfor %}
+    
+    {% else %} 
+      <p>There are no books borrowed.</p>
+    {% endif %}  
+  {% endif %}  
+</div>
+
+{% endblock %}

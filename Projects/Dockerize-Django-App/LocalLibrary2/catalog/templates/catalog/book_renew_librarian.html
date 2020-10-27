@@ -1,0 +1,41 @@
+{% extends "catalog/base_generic.html" %}
+{% block content %}
+
+<style> 
+        input{ 
+            width:100%; 
+            padding: 12px; 
+            } 
+</style>
+
+<div class="col-sm-7 mx-5">
+  <h1>Renew: {{ book_instance.book_title }}</h1>
+  <p>Borrower: {{ book_instance.borrower }}</p>
+  <p{% if book_instance.is_overdue %} class="text-danger"{% endif %}>Due date: {{ book_instance.due_back }}</p>
+</div>
+    
+<form method="post">
+    {% csrf_token %}
+    {% for field in form %}
+    <div class="form-group row mx-5 mt-4">
+      <div class="col-sm-2 col-form-label">{{ field.label_tag }}</div>
+        <div class="col-sm-7">
+          {{field}} <br>
+          {% if field.help_text %}
+            <small style="color: grey">{{ field.help_text }}</small>
+          {% endif %}
+          {% for error in field.errors %}
+            <p style="color: red">{{ error }}</p>
+          {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+
+  
+  <div class="form-group row mx-5">
+    <div class="col-sm-7">
+      <button type="submit" class="btn btn-info">Submit</button>
+    </div>
+  </div>
+</form>
+{% endblock %}

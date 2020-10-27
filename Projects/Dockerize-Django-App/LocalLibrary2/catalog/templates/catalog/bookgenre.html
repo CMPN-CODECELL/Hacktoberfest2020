@@ -1,0 +1,19 @@
+{% extends "catalog/base_generic.html" %}
+
+{% block content %}
+<div class="col-sm-7 mx-5">
+  <h2>Books</h2>
+  <h3>Genre: {{name}} </h3> <hr/>
+  {% if Books %}
+
+    {% for book in Books %}
+        <p class="text-info"><a href="{% url 'catalog:book-detail' book.id %}">{{book}}</a></p><hr/>
+    {% endfor %}
+
+  {% else %}
+    <p>There are no books of genre {{name}}</p>
+  {% endif %}   
+
+</div>  
+  
+{% endblock %}

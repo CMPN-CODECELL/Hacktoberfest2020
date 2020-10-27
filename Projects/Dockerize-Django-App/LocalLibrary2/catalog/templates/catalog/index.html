@@ -1,0 +1,17 @@
+{% extends "catalog/base_generic.html" %}
+{% block content %}
+
+<div class="col-sm-7 mx-5">
+  <h1>Pubic Library Home</h1>
+  <p>Welcome to Public Library, a website developed by <em>Areeba Seher</em></p><hr/>
+  <h2>Dynamic content</h2>
+  <p>The library has the following record counts:</p>
+  <ul>
+    <li><strong>Books:</strong> {{ num_books }}</li>
+    <li><strong>Copies:</strong> {{ num_instances }}</li>
+    <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+  </ul>
+</div>
+
+{% endblock %}

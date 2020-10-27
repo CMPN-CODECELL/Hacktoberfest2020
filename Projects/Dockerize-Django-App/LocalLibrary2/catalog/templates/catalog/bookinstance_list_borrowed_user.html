@@ -1,0 +1,17 @@
+{% extends "catalog/base_generic.html" %}
+{% block content %}
+
+<div class="col-sm-7 mx-5">
+  <h2>Borrowed books</h2><hr/>
+  {% if bookinstance_list %}
+    {% for bookinst in bookinstance_list %} 
+      <p class="{% if bookinst.is_overdue %}text-danger{% endif %}">
+      <a href="{% url 'catalog:book-detail' bookinst.book.pk %}">{{bookinst.book.title}} ({{ bookinst.due_back }}) </a> 
+      </p><hr/>
+    {% endfor %}
+  {% else %}
+      <p>There are no books borrowed.</p>
+  {% endif %}  
+</div> 
+
+{% endblock %}

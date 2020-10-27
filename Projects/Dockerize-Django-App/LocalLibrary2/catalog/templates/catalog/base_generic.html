@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    {% block title %}<title>Public Library</title>{% endblock %}
+        <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+   {% load static %}
+    <link rel="stylesheet" href="{% static 'catalog/CSS/base.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+</head>
+
+<body>
+  
+  
+  <div class="wrapper">
+        <!-- Sidebar  -->
+    {% block sidebar %}
+
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            
+            {% if user.is_authenticated and perms.catalog.can_mark_returned %}
+                <h3>Staff Member: {{user.get_username}}
+            {% elif user.is_authenticated %}
+                <h3>User: {{user.get_username}}
+            {% else %}
+                <h3>Public Library</h3>
+            {% endif %}
+        </div>
+
+        <ul class="list-unstyled components">
+
+            <li class="active">
+                <a href="{% url 'catalog:index' %}">Home</a>
+            </li>
+                
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Content</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li><a href="{% url 'catalog:books' %}">All Books</a></li>
+                        <li><a href="{% url 'catalog:authors' %}">All Authors</a></li>
+                        <li><a href="{% url 'catalog:genres' %}">All Genres</a></li>
+                </ul>
+            </li>
+                
+
+            {% if perms.catalog.add_author and perms.catalog.add_book %}
+                <li><a href="{% url 'catalog:author_create' %}">Add Authors</a></li>
+                <li><a href="{% url 'catalog:book_create' %}">Add Books</a></li>
+                <li><a href="{% url 'catalog:genre_create' %}">Add Genre</a></li>
+                <li><a href="{% url 'catalog:book_instance_create' %}">Loan Form</a></li>
+            {% endif %}
+
+        
+            {% if perms.catalog.can_mark_returned%}
+                <li><a href="{% url 'catalog:all-borrowed' %}">All borrowed</a></li>
+            {% endif %}
+
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'catalog:my-borrowed' %}">My Borrowed</a></li>
+                <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>   <!-- request.path gives the link where user first click login/logout button --> <!-- after the user has succesfully logged in/out the view will use next value to redirect the user back to the page where they first click the login/logoutbutton -->
+            {% else %}
+                <li><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>   
+            {% endif %} 
+                
+    </nav>
+
+        
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                    <div class="col text-center text-primary">
+                        <h2 style="color:#7386D5">Public Library</h2>
+                    </div>
+
+
+                    <!--<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button> -->
+
+                </div>
+        </nav>
+
+    {% endblock %}
+
+    <!-- Page Content  -->
+    {% block content %}{% endblock %}
+            <div class="col-sm-7 mx-5">
+        {% block pagination %}
+            {% if is_paginated %}
+                <div class="pagination justify-content-center">
+                    <span class="page-item">
+
+                    {% if page_obj.has_previous %}
+                        <p class="text-primary" style="text-align:center;" ><a href="{{ request.path }}?page={{ page_obj.previous_page_number }}">previous</a></p>
+                    {% endif %}  <!-- request.path to get the current page URL for creating the pagination links.--> 
+                
+                    {% if page_obj.has_next %}
+                        <p class="text-primary" style="text-align:center;"><a href="{{ request.path }}?page={{ page_obj.next_page_number }}">next</a> </p>
+                    {% endif %}
+
+                    <span class="page-current">
+                        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                    </span>
+                    </span>
+                </div>
+                
+</div>
+
+        {% endif %}
+    {% endblock %} 
+</div>
+    </div>
+    </div>
+   
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    {% load static %}
+    <script src="{% static 'catalog/JS/base.js' %}"></script>
+
+</body>
+</html>

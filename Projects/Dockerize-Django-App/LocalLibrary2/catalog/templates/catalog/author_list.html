@@ -1,0 +1,22 @@
+{% extends "catalog/base_generic.html" %}
+{% block content %}
+
+<div class="col-sm-7 mx-5">
+  <h2>All Authors</h2> <hr/>
+
+  {% if author_list %}
+    {% for author in author_list %}
+      <p class="text-info"><a href="{% url 'catalog:author-detail' author.id %}">{{ author }} ({{author.date_of_birth}})</a> </p> <hr/>
+
+      {% if perms.catalog.delete_author and perms.catalog.change_author %}
+          <button class="btn btn-info btn-sm"><a href="{% url 'catalog:author_delete' author.id %}">Delete author</a></button>
+          <button class="btn btn-info btn-sm"><a href="{% url 'catalog:author_update' author.id %}">Update author</a></button>
+          <hr/>
+      {% endif %}
+      
+    {% endfor %}
+  {% else %}
+    <p>No Author</p>
+  {% endif %}       
+  
+{% endblock %}
