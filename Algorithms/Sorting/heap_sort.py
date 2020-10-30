@@ -46,7 +46,7 @@ def heap_sort(arr):
         arr[i], arr[0] = arr[0], arr[i]   # swap
         heapify(arr, i, 0)
 
-heapSort(arr)
+heap_sort(arr)
 
 print ("Sorted array:")
 for i in range(len(arr)):
