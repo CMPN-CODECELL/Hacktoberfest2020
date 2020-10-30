@@ -23,7 +23,7 @@
 # Nearly guaranteed value refers to how many times to have a that chance to get
 # 1 item
 
-# This scripts is based on the stadistical Bernoulli distribution
+# This scripts is based on the statics Bernoulli distribution
 
 
 import math, sys
