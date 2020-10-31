@@ -1,3 +1,4 @@
+//Program to convert numbers from decimal to binary. 
 #include<iostream.h>
 #include<conio.h>
 void main()
